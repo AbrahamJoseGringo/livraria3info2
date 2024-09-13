@@ -14,7 +14,7 @@ from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 from core.views import (
     AutorViewSet,
     CategoriaViewSet,
-   
+    CompraViewSet, 
     EditoraViewSet,
     LivroViewSet,
     UserViewSet,
@@ -27,7 +27,7 @@ router.register(r"categorias", CategoriaViewSet, basename="categorias")
 router.register(r"editoras", EditoraViewSet, basename="editoras")
 router.register(r"livros", LivroViewSet, basename="livros")
 router.register(r"usuarios", UserViewSet, basename="users")
-
+router.register(r"compras", CompraViewSet)
 
 urlpatterns = [
     path("admin/", admin.site.urls),
