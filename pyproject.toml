@@ -23,6 +23,8 @@ dependencies = [
     "Pillow>=10.4.0",
     "python-magic>=0.4.27; sys_platform == \"linux\"",
     "python-magic-bin>=0.4.14; sys_platform == \"win32, darwin\"",
+    "dj-database-url>=2.2.0",
+    "passage-identity>=2.5.0",
 ]
 requires-python = ">=3.10"
 license = { text = "MIT" }
@@ -30,11 +32,15 @@ license = { text = "MIT" }
 [tool.pdm]
 
 [tool.pdm.dev-dependencies]
-format = ["isort>=5.11.3", "black>=22.12.0"]
+format = [
+    "isort>=5.11.3",
+    "black>=22.12.0"
+]
 dev = [
     "isort>=5.12.0",
     "black>=23.10.1",
     "pylint>=3.0.2",
+    "ipython>=8.26.0",
 ]
 
 [[tool.pdm.autoexport]]
